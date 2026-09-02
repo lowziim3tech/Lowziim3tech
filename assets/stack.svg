@@ -1,109 +1,380 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
-  <title id="title">Lowzii technology stack</title>
-  <desc id="desc">Premium animated technology stack showing Java, TypeScript, C++, Git, Gradle and Node.js.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img" aria-labelledby="title desc">
+  <title id="title">LowziiOfficial technology stack</title>
+  <desc id="desc">Minimal animated technology stack featuring Java, TypeScript, C++, Git, Gradle and Node.js.</desc>
 
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#030712" />
-      <stop offset="0.52" stop-color="#11112b" />
-      <stop offset="1" stop-color="#061925" />
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816" />
+      <stop offset="0.52" stop-color="#11102b" />
+      <stop offset="1" stop-color="#061824" />
     </linearGradient>
 
-    <linearGradient id="outline" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#22d3ee" />
-      <stop offset="0.35" stop-color="#8b5cf6" />
-      <stop offset="0.65" stop-color="#f6d365" />
-      <stop offset="1" stop-color="#22d3ee" />
+      <stop offset="0.5" stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#f6d365" />
+
+      <animate
+        attributeName="x1"
+        values="0;1;0"
+        dur="8s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="x2"
+        values="1;2;1"
+        dur="8s"
+        repeatCount="indefinite"
+      />
     </linearGradient>
 
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#ffffff" stroke-opacity="0.025" />
-    </pattern>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
 
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <radialGradient id="purpleGlow">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="cyanGlow">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+
+    <clipPath id="panelClip">
+      <rect x="8" y="8" width="1184" height="164" rx="30" />
+    </clipPath>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.12" />
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
-    </linearGradient>
-
-    <clipPath id="clip">
-      <rect x="8" y="8" width="1184" height="244" rx="36" />
-    </clipPath>
   </defs>
 
-  <rect x="8" y="8" width="1184" height="244" rx="36" fill="url(#panel)" />
-  <g clip-path="url(#clip)">
-    <rect x="8" y="8" width="1184" height="244" fill="url(#grid)" />
-    <circle cx="60" cy="40" r="150" fill="#8b5cf6" opacity="0.08" />
-    <circle cx="1150" cy="230" r="180" fill="#22d3ee" opacity="0.08" />
-    <rect x="-260" y="8" width="150" height="244" fill="url(#sweep)" transform="skewX(-18)">
-      <animate attributeName="x" values="-260;1380" dur="8s" repeatCount="indefinite" />
+  <rect
+    x="8"
+    y="8"
+    width="1184"
+    height="164"
+    rx="30"
+    fill="url(#background)"
+  />
+
+  <g clip-path="url(#panelClip)">
+    <circle cx="80" cy="30" r="150" fill="url(#purpleGlow)">
+      <animate
+        attributeName="cx"
+        values="80;145;80"
+        dur="10s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="1130" cy="155" r="165" fill="url(#cyanGlow)">
+      <animate
+        attributeName="cx"
+        values="1130;1060;1130"
+        dur="11s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <rect
+      x="-260"
+      y="8"
+      width="140"
+      height="164"
+      fill="url(#shine)"
+      transform="skewX(-18)"
+    >
+      <animate
+        attributeName="x"
+        values="-260;1380"
+        dur="8s"
+        repeatCount="indefinite"
+      />
     </rect>
   </g>
-  <rect x="8" y="8" width="1184" height="244" rx="36" fill="none" stroke="url(#outline)" stroke-width="2" />
 
-  <text x="600" y="48" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="6">TECHNOLOGY STACK</text>
-  <line x1="474" y1="64" x2="726" y2="64" stroke="url(#outline)" stroke-width="2" stroke-linecap="round" />
+  <rect
+    x="8"
+    y="8"
+    width="1184"
+    height="164"
+    rx="30"
+    fill="none"
+    stroke="url(#accent)"
+    stroke-width="2"
+  />
 
-  <g transform="translate(60 84)">
-    <rect width="160" height="130" rx="24" fill="#0f172a" fill-opacity="0.82" stroke="#f97316" stroke-opacity="0.5">
-      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" begin="0s" repeatCount="indefinite" />
+  <text
+    x="600"
+    y="43"
+    text-anchor="middle"
+    fill="#f8fafc"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="17"
+    font-weight="700"
+    letter-spacing="5"
+  >
+    TECH STACK
+  </text>
+
+  <line
+    x1="515"
+    y1="58"
+    x2="685"
+    y2="58"
+    stroke="url(#accent)"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- Java -->
+  <g transform="translate(60 78)">
+    <rect
+      width="160"
+      height="70"
+      rx="18"
+      fill="#0f172a"
+      fill-opacity="0.7"
+      stroke="#f97316"
+      stroke-opacity="0.35"
+    >
+      <animate
+        attributeName="stroke-opacity"
+        values="0.3;1;0.3"
+        dur="6s"
+        begin="0s"
+        repeatCount="indefinite"
+      />
     </rect>
-    <circle cx="80" cy="52" r="29" fill="#f97316" fill-opacity="0.16" stroke="#f97316" filter="url(#glow)" />
-    <text x="80" y="61" text-anchor="middle" fill="#fed7aa" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">J</text>
-    <text x="80" y="106" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">JAVA</text>
+
+    <circle
+      cx="32"
+      cy="35"
+      r="18"
+      fill="#f97316"
+      fill-opacity="0.14"
+      stroke="#f97316"
+      stroke-opacity="0.7"
+      filter="url(#softGlow)"
+    />
+
+    <text x="32" y="41" text-anchor="middle" fill="#fed7aa"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="18" font-weight="800">J</text>
+
+    <text x="62" y="41" fill="#f8fafc"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="700">Java</text>
   </g>
 
-  <g transform="translate(244 84)">
-    <rect width="160" height="130" rx="24" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-opacity="0.5">
-      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" begin="0.4s" repeatCount="indefinite" />
+  <!-- TypeScript -->
+  <g transform="translate(244 78)">
+    <rect
+      width="160"
+      height="70"
+      rx="18"
+      fill="#0f172a"
+      fill-opacity="0.7"
+      stroke="#38bdf8"
+      stroke-opacity="0.35"
+    >
+      <animate
+        attributeName="stroke-opacity"
+        values="0.3;1;0.3"
+        dur="6s"
+        begin="0.5s"
+        repeatCount="indefinite"
+      />
     </rect>
-    <circle cx="80" cy="52" r="29" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" filter="url(#glow)" />
-    <text x="80" y="60" text-anchor="middle" fill="#bae6fd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">TS</text>
-    <text x="80" y="106" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">TYPESCRIPT</text>
+
+    <circle
+      cx="32"
+      cy="35"
+      r="18"
+      fill="#38bdf8"
+      fill-opacity="0.14"
+      stroke="#38bdf8"
+      stroke-opacity="0.7"
+      filter="url(#softGlow)"
+    />
+
+    <text x="32" y="40" text-anchor="middle" fill="#bae6fd"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="800">TS</text>
+
+    <text x="62" y="41" fill="#f8fafc"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="700">TypeScript</text>
   </g>
 
-  <g transform="translate(428 84)">
-    <rect width="160" height="130" rx="24" fill="#0f172a" fill-opacity="0.82" stroke="#a78bfa" stroke-opacity="0.5">
-      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" begin="0.8s" repeatCount="indefinite" />
+  <!-- C++ -->
+  <g transform="translate(428 78)">
+    <rect
+      width="160"
+      height="70"
+      rx="18"
+      fill="#0f172a"
+      fill-opacity="0.7"
+      stroke="#a78bfa"
+      stroke-opacity="0.35"
+    >
+      <animate
+        attributeName="stroke-opacity"
+        values="0.3;1;0.3"
+        dur="6s"
+        begin="1s"
+        repeatCount="indefinite"
+      />
     </rect>
-    <circle cx="80" cy="52" r="29" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" filter="url(#glow)" />
-    <text x="80" y="59" text-anchor="middle" fill="#ddd6fe" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">C++</text>
-    <text x="80" y="106" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">C++</text>
+
+    <circle
+      cx="32"
+      cy="35"
+      r="18"
+      fill="#a78bfa"
+      fill-opacity="0.14"
+      stroke="#a78bfa"
+      stroke-opacity="0.7"
+      filter="url(#softGlow)"
+    />
+
+    <text x="32" y="40" text-anchor="middle" fill="#ddd6fe"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="12" font-weight="800">C++</text>
+
+    <text x="62" y="41" fill="#f8fafc"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="700">C++</text>
   </g>
 
-  <g transform="translate(612 84)">
-    <rect width="160" height="130" rx="24" fill="#0f172a" fill-opacity="0.82" stroke="#fb7185" stroke-opacity="0.5">
-      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" begin="1.2s" repeatCount="indefinite" />
+  <!-- Git -->
+  <g transform="translate(612 78)">
+    <rect
+      width="160"
+      height="70"
+      rx="18"
+      fill="#0f172a"
+      fill-opacity="0.7"
+      stroke="#fb7185"
+      stroke-opacity="0.35"
+    >
+      <animate
+        attributeName="stroke-opacity"
+        values="0.3;1;0.3"
+        dur="6s"
+        begin="1.5s"
+        repeatCount="indefinite"
+      />
     </rect>
-    <circle cx="80" cy="52" r="29" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" filter="url(#glow)" />
-    <text x="80" y="59" text-anchor="middle" fill="#fecdd3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">GIT</text>
-    <text x="80" y="106" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">GIT</text>
+
+    <circle
+      cx="32"
+      cy="35"
+      r="18"
+      fill="#fb7185"
+      fill-opacity="0.14"
+      stroke="#fb7185"
+      stroke-opacity="0.7"
+      filter="url(#softGlow)"
+    />
+
+    <text x="32" y="40" text-anchor="middle" fill="#fecdd3"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="11" font-weight="800">GIT</text>
+
+    <text x="62" y="41" fill="#f8fafc"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="700">Git</text>
   </g>
 
-  <g transform="translate(796 84)">
-    <rect width="160" height="130" rx="24" fill="#0f172a" fill-opacity="0.82" stroke="#34d399" stroke-opacity="0.5">
-      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" begin="1.6s" repeatCount="indefinite" />
+  <!-- Gradle -->
+  <g transform="translate(796 78)">
+    <rect
+      width="160"
+      height="70"
+      rx="18"
+      fill="#0f172a"
+      fill-opacity="0.7"
+      stroke="#34d399"
+      stroke-opacity="0.35"
+    >
+      <animate
+        attributeName="stroke-opacity"
+        values="0.3;1;0.3"
+        dur="6s"
+        begin="2s"
+        repeatCount="indefinite"
+      />
     </rect>
-    <circle cx="80" cy="52" r="29" fill="#34d399" fill-opacity="0.16" stroke="#34d399" filter="url(#glow)" />
-    <text x="80" y="59" text-anchor="middle" fill="#a7f3d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">GR</text>
-    <text x="80" y="106" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">GRADLE</text>
+
+    <circle
+      cx="32"
+      cy="35"
+      r="18"
+      fill="#34d399"
+      fill-opacity="0.14"
+      stroke="#34d399"
+      stroke-opacity="0.7"
+      filter="url(#softGlow)"
+    />
+
+    <text x="32" y="40" text-anchor="middle" fill="#a7f3d0"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="11" font-weight="800">GR</text>
+
+    <text x="62" y="41" fill="#f8fafc"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="700">Gradle</text>
   </g>
 
-  <g transform="translate(980 84)">
-    <rect width="160" height="130" rx="24" fill="#0f172a" fill-opacity="0.82" stroke="#84cc16" stroke-opacity="0.5">
-      <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" begin="2s" repeatCount="indefinite" />
+  <!-- Node.js -->
+  <g transform="translate(980 78)">
+    <rect
+      width="160"
+      height="70"
+      rx="18"
+      fill="#0f172a"
+      fill-opacity="0.7"
+      stroke="#84cc16"
+      stroke-opacity="0.35"
+    >
+      <animate
+        attributeName="stroke-opacity"
+        values="0.3;1;0.3"
+        dur="6s"
+        begin="2.5s"
+        repeatCount="indefinite"
+      />
     </rect>
-    <circle cx="80" cy="52" r="29" fill="#84cc16" fill-opacity="0.16" stroke="#84cc16" filter="url(#glow)" />
-    <text x="80" y="59" text-anchor="middle" fill="#d9f99d" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">JS</text>
-    <text x="80" y="106" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">NODE.JS</text>
+
+    <circle
+      cx="32"
+      cy="35"
+      r="18"
+      fill="#84cc16"
+      fill-opacity="0.14"
+      stroke="#84cc16"
+      stroke-opacity="0.7"
+      filter="url(#softGlow)"
+    />
+
+    <text x="32" y="40" text-anchor="middle" fill="#d9f99d"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="12" font-weight="800">JS</text>
+
+    <text x="62" y="41" fill="#f8fafc"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="14" font-weight="700">Node.js</text>
   </g>
 </svg>
