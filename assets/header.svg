@@ -1,72 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Lowzii — Founder of MeTech</title>
-  <desc id="desc">Animated premium banner for Lowzii, Minecraft Mod Developer and founder of the 2.5K member MeTech community.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">LowziiOfficial — MeTech Developer</title>
+  <desc id="desc">Minimal animated profile banner for LowziiOfficial, MeTech Developer and founder of MeTech.</desc>
 
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#030712">
-        <animate attributeName="stop-color" values="#030712;#071126;#030712" dur="10s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="0.5" stop-color="#17103a">
-        <animate attributeName="stop-color" values="#17103a;#241052;#17103a" dur="10s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="1" stop-color="#071827">
-        <animate attributeName="stop-color" values="#071827;#06263a;#071827" dur="10s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0" stop-color="#050816" />
+      <stop offset="0.52" stop-color="#11102b" />
+      <stop offset="1" stop-color="#061824" />
     </linearGradient>
 
-    <linearGradient id="border" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#22d3ee" />
-      <stop offset="0.3" stop-color="#8b5cf6" />
-      <stop offset="0.56" stop-color="#f6d365" />
-      <stop offset="0.78" stop-color="#a855f7" />
-      <stop offset="1" stop-color="#22d3ee" />
-      <animate attributeName="x1" values="0;1;0" dur="9s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="1;2;1" dur="9s" repeatCount="indefinite" />
+      <stop offset="0.5" stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#f6d365" />
+
+      <animate
+        attributeName="x1"
+        values="0;1;0"
+        dur="8s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="x2"
+        values="1;2;1"
+        dur="8s"
+        repeatCount="indefinite"
+      />
     </linearGradient>
 
-    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="nameColor" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" />
-      <stop offset="0.28" stop-color="#dbeafe" />
-      <stop offset="0.55" stop-color="#fef3c7" />
-      <stop offset="0.78" stop-color="#e9d5ff" />
-      <stop offset="1" stop-color="#ffffff" />
+      <stop offset="0.5" stop-color="#dbeafe" />
+      <stop offset="1" stop-color="#fef3c7" />
     </linearGradient>
 
-    <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.12" />
       <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
 
-    <radialGradient id="violetOrb">
-      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.7" />
+    <radialGradient id="purpleGlow">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35" />
       <stop offset="1" stop-color="#8b5cf6" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="cyanOrb">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.65" />
+    <radialGradient id="cyanGlow">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.3" />
       <stop offset="1" stop-color="#22d3ee" stop-opacity="0" />
     </radialGradient>
 
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1" />
-    </pattern>
-
     <clipPath id="panelClip">
-      <rect x="8" y="8" width="1184" height="404" rx="42" />
+      <rect x="8" y="8" width="1184" height="324" rx="38" />
     </clipPath>
 
-    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
 
-    <filter id="titleGlow" x="-20%" y="-40%" width="140%" height="180%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -74,65 +65,180 @@
     </filter>
   </defs>
 
-  <rect x="8" y="8" width="1184" height="404" rx="42" fill="url(#background)" />
+  <rect
+    x="8"
+    y="8"
+    width="1184"
+    height="324"
+    rx="38"
+    fill="url(#background)"
+  />
 
   <g clip-path="url(#panelClip)">
-    <rect x="8" y="8" width="1184" height="404" fill="url(#grid)" />
+    <circle cx="130" cy="65" r="230" fill="url(#purpleGlow)">
+      <animate
+        attributeName="cx"
+        values="130;210;130"
+        dur="10s"
+        repeatCount="indefinite"
+      />
 
-    <circle cx="168" cy="84" r="210" fill="url(#violetOrb)">
-      <animate attributeName="cx" values="168;245;168" dur="9s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="84;128;84" dur="11s" repeatCount="indefinite" />
+      <animate
+        attributeName="cy"
+        values="65;105;65"
+        dur="12s"
+        repeatCount="indefinite"
+      />
     </circle>
 
-    <circle cx="1035" cy="330" r="235" fill="url(#cyanOrb)">
-      <animate attributeName="cx" values="1035;960;1035" dur="10s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="330;278;330" dur="12s" repeatCount="indefinite" />
+    <circle cx="1080" cy="280" r="245" fill="url(#cyanGlow)">
+      <animate
+        attributeName="cx"
+        values="1080;995;1080"
+        dur="11s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="cy"
+        values="280;235;280"
+        dur="13s"
+        repeatCount="indefinite"
+      />
     </circle>
 
-    <path d="M-80 344 C170 268, 352 420, 615 332 S1030 244, 1280 344" fill="none" stroke="#22d3ee" stroke-opacity="0.16" stroke-width="2">
-      <animate attributeName="d" values="M-80 344 C170 268,352 420,615 332 S1030 244,1280 344;M-80 326 C170 398,352 252,615 342 S1030 420,1280 310;M-80 344 C170 268,352 420,615 332 S1030 244,1280 344" dur="12s" repeatCount="indefinite" />
-    </path>
-
-    <path d="M-80 368 C230 280, 410 438, 705 354 S1050 282, 1280 362" fill="none" stroke="#a855f7" stroke-opacity="0.16" stroke-width="2">
-      <animate attributeName="d" values="M-80 368 C230 280,410 438,705 354 S1050 282,1280 362;M-80 350 C230 430,410 286,705 372 S1050 430,1280 342;M-80 368 C230 280,410 438,705 354 S1050 282,1280 362" dur="14s" repeatCount="indefinite" />
-    </path>
-
-    <rect x="-360" y="8" width="210" height="404" fill="url(#shimmer)" transform="skewX(-18)">
-      <animate attributeName="x" values="-360;1420" dur="7s" repeatCount="indefinite" />
+    <rect
+      x="-300"
+      y="8"
+      width="170"
+      height="324"
+      fill="url(#shine)"
+      transform="skewX(-18)"
+    >
+      <animate
+        attributeName="x"
+        values="-300;1400"
+        dur="8s"
+        repeatCount="indefinite"
+      />
     </rect>
   </g>
 
-  <rect x="8" y="8" width="1184" height="404" rx="42" fill="none" stroke="url(#border)" stroke-width="2" />
-  <rect x="16" y="16" width="1168" height="388" rx="35" fill="none" stroke="#ffffff" stroke-opacity="0.07" />
+  <rect
+    x="8"
+    y="8"
+    width="1184"
+    height="324"
+    rx="38"
+    fill="none"
+    stroke="url(#accent)"
+    stroke-width="2"
+  />
 
-  <g transform="translate(52 48)">
-    <circle cx="6" cy="6" r="6" fill="#34d399" filter="url(#softGlow)">
-      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
-    </circle>
-    <text x="24" y="11" fill="#d1fae5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">BUILDING AT METECH</text>
+  <rect
+    x="16"
+    y="16"
+    width="1168"
+    height="308"
+    rx="31"
+    fill="none"
+    stroke="#ffffff"
+    stroke-opacity="0.06"
+  />
+
+  <circle
+    cx="600"
+    cy="52"
+    r="5"
+    fill="#22d3ee"
+    filter="url(#softGlow)"
+  >
+    <animate
+      attributeName="r"
+      values="4;7;4"
+      dur="2.2s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="1;0.45;1"
+      dur="2.2s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="600"
+    y="145"
+    text-anchor="middle"
+    fill="url(#nameColor)"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="76"
+    font-weight="800"
+    letter-spacing="3"
+  >
+    LowziiOfficial
+  </text>
+
+  <text
+    x="600"
+    y="191"
+    text-anchor="middle"
+    fill="#cbd5e1"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="21"
+    font-weight="600"
+    letter-spacing="4"
+  >
+    MeTech Developer
+  </text>
+
+  <line
+    x1="425"
+    y1="221"
+    x2="775"
+    y2="221"
+    stroke="url(#accent)"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <g transform="translate(410 244)">
+    <rect
+      width="380"
+      height="48"
+      rx="24"
+      fill="#020617"
+      fill-opacity="0.58"
+      stroke="#ffffff"
+      stroke-opacity="0.14"
+    />
+
+    <text
+      x="190"
+      y="30"
+      text-anchor="middle"
+      fill="#fef3c7"
+      font-family="Inter, Segoe UI, Arial, sans-serif"
+      font-size="13"
+      font-weight="700"
+      letter-spacing="2.2"
+    >
+      FOUNDER OF METECH · 3K+ MEMBERS
+    </text>
   </g>
 
-  <g transform="translate(900 40)">
-    <rect width="240" height="35" rx="17.5" fill="#ffffff" fill-opacity="0.055" stroke="#ffffff" stroke-opacity="0.12" />
-    <text x="120" y="23" text-anchor="middle" fill="#cbd5e1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">JAVA  ·  TS  ·  C++</text>
-  </g>
-
-  <text x="600" y="184" text-anchor="middle" fill="url(#titleGradient)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="15" filter="url(#titleGlow)">LOWZII</text>
-
-  <text x="600" y="230" text-anchor="middle" fill="#e2e8f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="6">MINECRAFT MOD DEVELOPER</text>
-
-  <g transform="translate(376 258)">
-    <rect width="448" height="48" rx="24" fill="#020617" fill-opacity="0.58" stroke="#f6d365" stroke-opacity="0.55" />
-    <rect x="5" y="5" width="438" height="38" rx="19" fill="none" stroke="#ffffff" stroke-opacity="0.06" />
-    <text x="224" y="30" text-anchor="middle" fill="#fef3c7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.4">FOUNDER OF METECH  ·  2.5K+ MEMBERS</text>
-  </g>
-
-  <g transform="translate(360 338)">
-    <line x1="0" y1="0" x2="480" y2="0" stroke="url(#border)" stroke-width="2" stroke-linecap="round" />
-    <circle cx="240" cy="0" r="5" fill="#f6d365" filter="url(#softGlow)">
-      <animate attributeName="r" values="4;7;4" dur="2.2s" repeatCount="indefinite" />
-    </circle>
-  </g>
-
-  <text x="600" y="375" text-anchor="middle" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="4">TECHNOLOGY  ·  AUTOMATION  ·  COMMUNITY</text>
+  <text
+    x="600"
+    y="316"
+    text-anchor="middle"
+    fill="#64748b"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="11"
+    font-weight="600"
+    letter-spacing="4"
+  >
+    TECHNOLOGY · AUTOMATION · COMMUNITY
+  </text>
 </svg>
