@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title desc">
+  <title id="title">MeTech premium footer</title>
+  <desc id="desc">Animated premium footer with the message Build with purpose, grow with vision.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030712" />
+      <stop offset="0.5" stop-color="#17103a" />
+      <stop offset="1" stop-color="#071827" />
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" />
+      <stop offset="0.34" stop-color="#8b5cf6" />
+      <stop offset="0.58" stop-color="#f6d365" />
+      <stop offset="0.82" stop-color="#a855f7" />
+      <stop offset="1" stop-color="#22d3ee" />
+    </linearGradient>
+
+    <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <clipPath id="clip">
+      <rect x="8" y="8" width="1184" height="134" rx="30" />
+    </clipPath>
+  </defs>
+
+  <rect x="8" y="8" width="1184" height="134" rx="30" fill="url(#background)" />
+
+  <g clip-path="url(#clip)">
+    <circle cx="70" cy="20" r="115" fill="#8b5cf6" opacity="0.09">
+      <animate attributeName="cx" values="70;125;70" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1135" cy="130" r="130" fill="#22d3ee" opacity="0.09">
+      <animate attributeName="cx" values="1135;1080;1135" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <rect x="-220" y="8" width="130" height="134" fill="url(#shimmer)" transform="skewX(-18)">
+      <animate attributeName="x" values="-220;1360" dur="7.5s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <rect x="8" y="8" width="1184" height="134" rx="30" fill="none" stroke="url(#accent)" stroke-width="2" />
+  <line x1="80" y1="75" x2="330" y2="75" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" />
+  <line x1="870" y1="75" x2="1120" y2="75" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" />
+
+  <circle cx="350" cy="75" r="5" fill="#22d3ee" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="850" cy="75" r="5" fill="#f6d365" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+
+  <text x="600" y="69" text-anchor="middle" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">BUILD WITH PURPOSE</text>
+  <text x="600" y="98" text-anchor="middle" fill="#f6d365" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3">GROW WITH VISION  ·  METECH</text>
+</svg>
