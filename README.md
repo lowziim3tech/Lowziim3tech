@@ -8,11 +8,11 @@
 
 <br />
 
-<h2 align="center">✦ Technology & MeTech</h2>
+<h2 align="center">Lowzii &amp; MeTech</h2>
 
 <p align="center">
   Developer focused on <b>automation, software tools and community systems</b>.<br />
-  Building and growing <b>MeTech</b> — a technology community with 2.5K+ members.
+  Building and growing <b>MeTech</b> — a technology Community with 3000 member.
 </p>
 
 <p align="center">
@@ -27,14 +27,14 @@
 
 <br />
 
-<h2 align="center">✦ Contact</h2>
+<h2 align="center">Contact</h2>
 
 <p align="center">
   <a href="https://discord.gg/metech">
-    <img src="https://img.shields.io/badge/JOIN_METECH-7C3AED?style=for-the-badge&logo=discord&logoColor=white" alt="Join MeTech Discord" />
+    <img src="https://img.shields.io/badge/Join_MeTech-7C3AED?style=for-the-badge&logo=discord&logoColor=white" alt="Join MeTech" />
   </a>
   <a href="https://github.com/lowziim3tech">
-    <img src="https://img.shields.io/badge/VIEW_GITHUB-111827?style=for-the-badge&logo=github&logoColor=F6D365" alt="View Lowzii on GitHub" />
+    <img src="https://img.shields.io/badge/View_Github-111827?style=for-the-badge&logo=github&logoColor=F6D365" alt="View Github" />
   </a>
 </p>
 
