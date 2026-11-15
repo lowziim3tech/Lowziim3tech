@@ -2,56 +2,55 @@
   <img src="./assets/header.svg" width="100%" alt="LowziiOfficial — MeTech Developer" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=1100&color=22D3EE&center=true&vCenter=true&repeat=true&width=900&height=48&lines=Building+technology+and+automation+at+MeTech;Growing+a+community+of+3%2C000%2B+members" alt="Animated MeTech introduction" />
-</p>
-
-<br />
-
-<h1 align="center">Lowzii &amp; MeTech</h1>
-
-<h3 align="center">
-  Developer focused on automation, software tools and community systems.<br />
-  Building and growing MeTech — a technology community with 3,000+ members.
-</h3>
+<h1 align="center">Lowzii · MeTech</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AUTOMATION-0891B2?style=for-the-badge" alt="Automation" />
-  <img src="https://img.shields.io/badge/SOFTWARE_TOOLS-7C3AED?style=for-the-badge" alt="Software Tools" />
-  <img src="https://img.shields.io/badge/COMMUNITY_SYSTEMS-B45309?style=for-the-badge" alt="Community Systems" />
-  <img src="https://img.shields.io/badge/3%2C000%2B_MEMBERS-059669?style=for-the-badge" alt="3,000+ Members" />
+  <strong>Minecraft mods, automation &amp; community tools.</strong><br />
+  Building practical software and sharing useful tools with the MeTech community.
 </p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=1800&pause=3500&color=A78BFA&center=true&vCenter=true&repeat=true&width=560&height=38&lines=THINK+%C2%B7+BUILD+%C2%B7+REFINE+%C2%B7+SCALE" alt="Think, build, refine and scale" />
-</p>
-
-<br />
-
-<p align="center">
-  <img src="./assets/stack.svg" width="100%" alt="Java, TypeScript, C++, Git, Gradle and Node.js" />
-</p>
-
-<br />
-
-<h1 align="center">Contact</h1>
 
 <p align="center">
   <a href="https://discord.gg/metech">
-    <img src="https://img.shields.io/badge/Join_MeTech-7C3AED?style=for-the-badge&logo=discord&logoColor=white" height="34" alt="Join MeTech" />
+    <img src="https://img.shields.io/badge/Join_MeTech-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join MeTech on Discord" />
   </a>
-
-  <a href="https://github.com/lowziim3tech">
-    <img src="https://img.shields.io/badge/View_Github-111827?style=for-the-badge&logo=github&logoColor=F6D365" height="34" alt="View Github" />
+  <a href="https://github.com/lowziim3tech?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore my GitHub repositories" />
   </a>
 </p>
+
+## About me
+
+I'm **LowziiOfficial**, a developer based in **Da Nang, Vietnam**, and the founder of **MeTech**.
+
+I focus on Minecraft mods, automation software and tools that make everyday tasks easier. Community feedback helps shape what I build and improve next.
+
+## What I build
+
+- **Minecraft mods & addons** — gameplay utilities and custom features.
+- **Automation & software tools** — applications for repetitive tasks and everyday workflows.
+- **Community projects** — free mod releases, updates and ideas shared through MeTech.
+
+## Tech stack
+
+<p>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square" alt="Java" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
+</p>
+
+## Community & requests
+
+**MeTech is where I share free mods and connect with the community.**
+
+Have a mod idea or a feature request? Share what you need and how you would use it. I review suggestions and work on selected ideas when time allows.
+
+For support, include the project name, version, steps to reproduce the issue, and any relevant screenshots or logs.
+
+**[Join MeTech on Discord →](https://discord.gg/metech)**
+
+---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DA_NANG%2C_VIETNAM_%C2%B7_METECH_COMMUNITY_%F0%9F%87%BB%F0%9F%87%B3-0F172A?style=for-the-badge" height="30" alt="Da Nang, Vietnam · MeTech Community" />
+  Built by Lowzii · Shared with the MeTech community.
 </p>
 
-<br />
-
-<p align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Build with purpose — grow with vision" />
-</p>
